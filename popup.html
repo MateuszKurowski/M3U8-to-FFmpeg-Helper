@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <style>
+        body {
+            font-family: sans-serif;
+            width: 300px;
+            padding: 10px;
+        }
+
+        h3 {
+            margin-top: 0;
+        }
+
+        button {
+            margin-top: 5px;
+            width: 100%;
+            padding: 5px;
+        }
+
+        .link {
+            font-size: 12px;
+            margin-top: 5px;
+            word-break: break-all;
+        }
+    </style>
+</head>
+
+<body>
+    <h3>M3U8 Downloader</h3>
+
+    <label for="fileName">Output File Name:</label>
+    <input type="text" id="fileName" placeholder="File name" value="wideo" />
+
+    <div class="separator"></div>
+    <div id="linksContainer"></div>
+
+    <button id="copyCmd">Copy ffmpeg Command</button>
+    <div id="status"></div>
+
+    <script src="popup.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,23 @@
+{
+  "manifest_version": 3,
+  "name": "M3U8 to FFmpeg Helper",
+  "version": "1.0",
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "permissions": [
+    "activeTab",
+    "scripting",
+    "downloads",
+    "clipboardWrite",
+    "storage",
+    "webRequest",
+    "tabs"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html"
+  }
+}
